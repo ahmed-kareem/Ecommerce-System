@@ -1,0 +1,58 @@
+﻿@model List<subCategory>
+
+@{
+    ViewBag.title = "sub categories";
+    ViewBag.heading = "Sub Categories";
+}
+
+@section breadcrumb
+{
+    <li class="breadcrumb-item active"> <a asp-area="admin" asp-controller="Home" asp-action="Index"> home </a> </li>
+    <li class="breadcrumb-item active"> all sub categories </li>
+
+    @*<li class="breadcrumb-item active"> <a asp-area="admin" asp-controller="Home" asp-action="Index"> home </a> </li>
+        <li class="breadcrumb-item active"> <a asp-area="admin" asp-controller="mainCat" asp-action="Index"> main categoy </a> </li>
+        <li class="breadcrumb-item active">create main category</li>*@
+}
+
+@* ------------------------------------- Start RenderBody ------------------------------------------ *@
+
+<div>
+    <a asp-area="admin" asp-controller="subCat" asp-action="Create" class="btn btn-dark"> Add New Category </a>
+</div>
+
+<br/>
+
+<table class="table">
+    <tr>
+        <th> Category Name </th>
+        <th> Category Photo </th>
+        <th> Main Category </th>
+        <th> Category Products </th>
+        <th> Action </th>
+    </tr>
+    
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.subCategoryName </td>
+            <td> <img src="~/photos/@item.subCategoryPhoto" wit="100" height="100" /> </td>
+            <td> @item.MainCategory.mainCategoryName </td>
+            <td> <a asp-area="admin" asp-controller="subCat" asp-action="selectedCategoryProducts" asp-route-id="@item.subCategoryId" class="btn btn-outline-dark"> produts </a> </td>
+            <td> <a asp-area="admin" asp-controller="subCat" asp-action="Edite" asp-route-id="@item.subCategoryId" class="btn btn-info"> Edite </a> </td>
+            <td> <a asp-area="admin" asp-controller="subCat" asp-action="Delete" asp-route-id="@item.subCategoryId" class="btn btn-danger"> Delete </a> </td>
+        </tr>
+    }
+</table>
+
+
+
+
+
+
+
+
+
+
+
+@* ------------------------------------- End RenderBody ------------------------------------------ *@
