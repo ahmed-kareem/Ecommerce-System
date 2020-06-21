@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 single-right-left simpleCart_shelfItem">
-                    <h3>Irayz Butterfly Sunglasses  (Black)</h3>
+                    <h3>@Model.productName</h3>
                     <p>
                         <span class="item_price">$650</span>
                         <del>$1,199</del>
@@ -77,10 +77,8 @@
                     <div class="occasion-cart">
                         <div class="googles single-item singlepage">
                             <form action="#" method="post">
-                                <input type="hidden" name="cmd" value="_cart">
-                                <input type="hidden" name="add" value="1">
-                                <input type="hidden" name="googles_item" value="Farenheit">
-                                <input type="hidden" name="amount" value="575.00">
+                                <input type="hidden" name="id" value="@Model.productId">
+                                
                                 <button type="submit" class="googles-cart pgoogles-cart">
                                     Add to Cart
                                 </button>

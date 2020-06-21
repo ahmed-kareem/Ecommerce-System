@@ -16,7 +16,7 @@ namespace FinalProject.Areas.User.Controllers
         {
             this.context = context;
         }
-        [Route("Hemalaya")]
+        
         public IActionResult Index()
         {
 
