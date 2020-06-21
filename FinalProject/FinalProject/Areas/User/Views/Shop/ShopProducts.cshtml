@@ -25,7 +25,7 @@
                         </form>
                     </div>
                     <!-- price range -->
-                    <div class="range">
+                    @*<div class="range">
                         <h3 class="agileits-sear-head">Price range</h3>
                         <ul class="dropdown-menu6">
                             <li>
@@ -34,7 +34,17 @@
                                 <input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
                             </li>
                         </ul>
-                    </div>
+                    </div>*@
+                <div class="range">
+                    <h3 class="agileits-sear-head">Price range</h3>
+                    <select id="dropdownlist">
+                        <option value="300">300$</option>
+                        <option value="500">500$</option>
+                        <option value="1000">1000$</option>
+                        <option value="1500">1500$</option>
+                        <option value="2000">2000$</option>
+                    </select>
+                </div>
                     <!-- //price range -->
                     <!--preference -->
                     <div class="left-side">
@@ -201,7 +211,7 @@
                             </div>
 
                         </div>
-                        <div class="row">
+                        <div class="row" id="prods">
                             <!-- products -->
                             @foreach (var product in Model)
                             {
@@ -209,11 +219,11 @@
                                     <div class="product-googles-info googles">
                                         <div class="men-pro-item">
                                             <div class="men-thumb-item">
-                                                <img src="~/images/@product.productPhoto" class="img-fluid" alt="">
+                                                <img src="~/images/@product.productPhoto" class="img-fluid" alt="product image">
                                                 <div class="men-cart-pro">
                                                     <div class="inner-men-cart-pro">
                                                         @*replace href attr with actions and controllers for that product*@
-                                                        <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                                        <a asp-controller="Shop" asp-action="ProductDetails" asp-route-productId="@product.productId" class="link-product-add-cart">Quick View</a>
                                                     </div>
                                                 </div>
                                                 <span class="product-new-top">New</span>
@@ -224,7 +234,7 @@
                                                         <div class="product_price">
                                                             <h4>
                                                                 @*Also Remember to change controllers and actions for the product name if clicked*@
-                                                                <a href="single.html">@product.productName</a>
+                                                                <a asp-controller ="Shop" asp-action="ProductDetails" asp-route-productId="@product.productId">@product.productName</a>
                                                             </h4>
                                                             <div class="grid-price mt-2">
                                                                 <span class="money ">@product.productPrice</span>
@@ -285,6 +295,7 @@
                 <!--//product right-->
             </div>
             <!--Start slider-->
+            @* here we display top rated products *@
             <div class="slider-img mid-sec mt-lg-5 mt-2">
                 <!--//banner-sec-->
                 <h3 class="tittle-w3layouts text-left my-lg-4 my-3">Featured Products</h3>
@@ -383,3 +394,4 @@ else
 {
     <h2>No Products</h2>
 }
+

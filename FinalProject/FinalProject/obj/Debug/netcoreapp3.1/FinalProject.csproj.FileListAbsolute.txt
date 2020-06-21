@@ -426,3 +426,6 @@ D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Fin
 D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\FinalProject.genruntimeconfig.cache
 D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Hemalaya\Index.cshtml.g.cs
 D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Shop\ShopProducts.cshtml.g.cs
+D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Shop\ProductDetails.cshtml.g.cs
+D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Shop\FilterByPrice.cshtml.g.cs
+D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\_ViewImports.cshtml.g.cs

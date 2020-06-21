@@ -12,9 +12,48 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "D:\github\Ecommerce-System\FinalProject\FinalProject\Areas\User\Views\_ViewImports.cshtml"
+using FinalProject;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\github\Ecommerce-System\FinalProject\FinalProject\Areas\User\Views\_ViewImports.cshtml"
+using FinalProject.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"345ba02b7ade24ba58c9b368a8ae0efc3b27bba8", @"/Areas/User/Views/Hemalaya/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1cd403b176af46e85ea812cbc8b3a7a1a86d4d8", @"/Areas/User/Views/_ViewImports.cshtml")]
     public class Areas_User_Views_Hemalaya_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<FinalProject.ViewModels.HomeViewModel>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("#"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        #pragma warning restore 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -492,10 +531,10 @@ namespace AspNetCore
                                         </ul>
                                     </div>
                                     <div class=""googles single-item hvr-outline-out"">
-                                        <form action=""#"" method=""post"">
-                                         ");
-            WriteLiteral("   <input type=\"hidden\" name=\"cmd\" value=\"_cart\">\r\n                                            <input type=\"hidden\" name=\"productId\"");
-            BeginWriteAttribute("value", " value=\"", 24360, "\"", 24386, 1);
+                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba830629", async() => {
+                WriteLiteral("\r\n                                            <input type=\"hidden\" name=\"cmd\" value=\"_cart\">\r\n                                            <input type=\"hidden\" name=\"productId\"");
+                BeginWriteAttribute("value", " value=\"", 24360, "\"", 24386, 1);
 #nullable restore
 #line 424 "D:\github\Ecommerce-System\FinalProject\FinalProject\Areas\User\Views\Hemalaya\Index.cshtml"
 WriteAttributeValue("", 24368, product.productId, 24368, 18, false);
@@ -503,12 +542,12 @@ WriteAttributeValue("", 24368, product.productId, 24368, 18, false);
 #line default
 #line hidden
 #nullable disable
-            EndWriteAttribute();
-            WriteLiteral(@">
+                EndWriteAttribute();
+                WriteLiteral(@">
                                             <input type=""hidden"" name=""add"" value=""1"">
                                             <input type=""hidden"" name=""googles_item"" value=""Aislin Wayfarer"">
                                             <input type=""hidden"" name=""amount""");
-            BeginWriteAttribute("value", " value=\"", 24667, "\"", 24696, 1);
+                BeginWriteAttribute("value", " value=\"", 24667, "\"", 24696, 1);
 #nullable restore
 #line 427 "D:\github\Ecommerce-System\FinalProject\FinalProject\Areas\User\Views\Hemalaya\Index.cshtml"
 WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
@@ -516,13 +555,30 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
 #line default
 #line hidden
 #nullable disable
-            EndWriteAttribute();
-            WriteLiteral(@">
+                EndWriteAttribute();
+                WriteLiteral(@">
                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                 <i class=""fas fa-cart-plus""></i>
                                             </button>
 
-                                        </form>
+                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                     </div>
                                 </div>
@@ -1117,17 +1173,35 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba874953", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <inpu");
-            WriteLiteral(@"t type=""hidden"" name=""googles_item"" value=""Fastrack Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Fastrack Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""325.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
 
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1140,8 +1214,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-           ");
-            WriteLiteral(@"                     <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1200,16 +1273,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba882269", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ");
-            WriteLiteral(@"type=""hidden"" name=""googles_item"" value=""MARTIN Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""MARTIN Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""425.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1222,8 +1313,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-                 ");
-            WriteLiteral(@"               <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1282,16 +1372,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba889584", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <inp");
-            WriteLiteral(@"ut type=""hidden"" name=""googles_item"" value=""Royal Son Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Royal Son Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""425.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1304,8 +1412,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-           ");
-            WriteLiteral(@"                     <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1364,16 +1471,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba896900", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input");
-            WriteLiteral(@" type=""hidden"" name=""googles_item"" value=""Irayz Butterfly"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Irayz Butterfly"">
                                                             <input type=""hidden"" name=""amount"" value=""281.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1386,8 +1511,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-               ");
-            WriteLiteral(@"                 <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1446,16 +1570,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8104216", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <inp");
-            WriteLiteral(@"ut type=""hidden"" name=""googles_item"" value=""Jerry Rectangular "">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Jerry Rectangular "">
                                                             <input type=""hidden"" name=""amount"" value=""525.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1468,8 +1610,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-          ");
-            WriteLiteral(@"                      <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1528,16 +1669,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8111535", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ");
-            WriteLiteral(@"type=""hidden"" name=""googles_item"" value=""Herdy Wayfarer"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Herdy Wayfarer"">
                                                             <input type=""hidden"" name=""amount"" value=""325.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1555,8 +1714,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
 
 
             <!-- /testimonials -->
-            <!");
-            WriteLiteral(@"-- /testimonials -->
+            <!-- /testimonials -->
             <div class=""slider-img mid-sec mt-lg-5 mt-2"">
                 <!--//banner-sec-->
                 <h3 class=""tittle-w3layouts text-left my-lg-4 my-3"">TOP RATED</h3>
@@ -1565,7 +1723,8 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
                                 <div class=""product-men women_two bot-gd"">
-                                    <div class=""product-googles-info slide-img googles"">
+                             ");
+            WriteLiteral(@"       <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
                                                 <img src=""images/1.png"" class=""img-fluid""");
@@ -1623,17 +1782,35 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8119323", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input t");
-            WriteLiteral(@"ype=""hidden"" name=""googles_item"" value=""Fastrack Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Fastrack Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""325.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
 
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1646,8 +1823,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-              ");
-            WriteLiteral(@"                  <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1706,16 +1882,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8126639", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input typ");
-            WriteLiteral(@"e=""hidden"" name=""googles_item"" value=""MARTIN Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""MARTIN Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""425.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1728,8 +1922,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-                    ");
-            WriteLiteral(@"            <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1788,16 +1981,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8133954", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ");
-            WriteLiteral(@"type=""hidden"" name=""googles_item"" value=""Royal Son Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Royal Son Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""425.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1810,8 +2021,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-              ");
-            WriteLiteral(@"                  <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1870,16 +2080,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8141270", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ty");
-            WriteLiteral(@"pe=""hidden"" name=""googles_item"" value=""Irayz Butterfly"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Irayz Butterfly"">
                                                             <input type=""hidden"" name=""amount"" value=""281.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1892,8 +2120,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-                  ");
-            WriteLiteral(@"              <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -1952,16 +2179,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8148586", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ");
-            WriteLiteral(@"type=""hidden"" name=""googles_item"" value=""Jerry Rectangular "">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Jerry Rectangular "">
                                                             <input type=""hidden"" name=""amount"" value=""525.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -1974,8 +2219,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-             ");
-            WriteLiteral(@"                   <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -2034,16 +2278,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8155902", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input typ");
-            WriteLiteral(@"e=""hidden"" name=""googles_item"" value=""Herdy Wayfarer"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Herdy Wayfarer"">
                                                             <input type=""hidden"" name=""amount"" value=""325.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -2058,8 +2320,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                 </div>
             </div>
             <!-- /testimonials -->
-            <!-- /testi");
-            WriteLiteral(@"monials -->
+            <!-- /testimonials -->
 
             <div class=""slider-img mid-sec mt-lg-5 mt-2"">
                 <!--//banner-sec-->
@@ -2069,7 +2330,8 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
                                 <div class=""product-men women_two bot-gd"">
-                                    <div class=""product-googles-info slide-img googles"">
+                               ");
+            WriteLiteral(@"     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
                                                 <img src=""images/1.png"" class=""img-fluid""");
@@ -2127,17 +2389,35 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8163688", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input t");
-            WriteLiteral(@"ype=""hidden"" name=""googles_item"" value=""Fastrack Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Fastrack Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""325.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
 
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -2150,8 +2430,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-              ");
-            WriteLiteral(@"                  <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -2210,16 +2489,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8171004", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input typ");
-            WriteLiteral(@"e=""hidden"" name=""googles_item"" value=""MARTIN Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""MARTIN Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""425.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -2232,8 +2529,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-                    ");
-            WriteLiteral(@"            <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -2292,16 +2588,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8178319", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ");
-            WriteLiteral(@"type=""hidden"" name=""googles_item"" value=""Royal Son Aviator"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Royal Son Aviator"">
                                                             <input type=""hidden"" name=""amount"" value=""425.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -2314,8 +2628,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-              ");
-            WriteLiteral(@"                  <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -2374,16 +2687,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8185635", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ty");
-            WriteLiteral(@"pe=""hidden"" name=""googles_item"" value=""Irayz Butterfly"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Irayz Butterfly"">
                                                             <input type=""hidden"" name=""amount"" value=""281.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -2396,8 +2727,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-                  ");
-            WriteLiteral(@"              <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -2456,16 +2786,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8192951", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input ");
-            WriteLiteral(@"type=""hidden"" name=""googles_item"" value=""Jerry Rectangular "">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Jerry Rectangular "">
                                                             <input type=""hidden"" name=""amount"" value=""525.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -2478,8 +2826,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                         </div>
                         <div class=""item"">
                             <div class=""gd-box-info text-center"">
-             ");
-            WriteLiteral(@"                   <div class=""product-men women_two bot-gd"">
+                                <div class=""product-men women_two bot-gd"">
                                     <div class=""product-googles-info slide-img googles"">
                                         <div class=""men-pro-item"">
                                             <div class=""men-thumb-item"">
@@ -2538,16 +2885,34 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                                         </ul>
                                                     </div>
                                                     <div class=""googles single-item hvr-outline-out"">
-                                                        <form action=""#"" method=""post"">
+                                                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345ba02b7ade24ba58c9b368a8ae0efc3b27bba8200267", async() => {
+                WriteLiteral(@"
                                                             <input type=""hidden"" name=""cmd"" value=""_cart"">
                                                             <input type=""hidden"" name=""add"" value=""1"">
-                                                            <input typ");
-            WriteLiteral(@"e=""hidden"" name=""googles_item"" value=""Herdy Wayfarer"">
+                                                            <input type=""hidden"" name=""googles_item"" value=""Herdy Wayfarer"">
                                                             <input type=""hidden"" name=""amount"" value=""325.00"">
                                                             <button type=""submit"" class=""googles-cart pgoogles-cart"">
                                                                 <i class=""fas fa-cart-plus""></i>
                                                             </button>
-                                                        </form>
+                                                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
                                                     </div>
                                                 </div>
@@ -2562,15 +2927,15 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                 </div>
             </div>
             <!-- /testimonials -->
-            <!-- /testi");
-            WriteLiteral(@"monials -->
+            <!-- /testimonials -->
             <div class=""testimonials py-lg-4 py-3 mt-4"">
                 <div class=""testimonials-inner py-lg-4 py-3"">
                     <h3 class=""tittle-w3layouts text-center my-lg-4 my-4"">Tesimonials</h3>
                     <div id=""carouselExampleControls"" class=""carousel slide"" data-ride=""carousel"">
                         <div class=""carousel-inner"" role=""listbox"">
                             <div class=""carousel-item active"">
-                                <div class=""testimonials_grid text-center"">
+                                <div class=""testimonials_gri");
+            WriteLiteral(@"d text-center"">
                                     <h3>
                                         Anamaria
                                         <span>Customer</span>
@@ -2578,8 +2943,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                     <label>United States</label>
                                     <p>
                                         Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
-                              ");
-            WriteLiteral(@"          Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.
+                                        Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.
                                     </p>
                                 </div>
                             </div>
@@ -2588,7 +2952,8 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                     <h3>
                                         Esmeralda
                                         <span>Customer</span>
-                                    </h3>
+                                 ");
+            WriteLiteral(@"   </h3>
                                     <label>United States</label>
                                     <p>
                                         Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
@@ -2596,8 +2961,7 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                     </p>
                                 </div>
                             </div>
-         ");
-            WriteLiteral(@"                   <div class=""carousel-item"">
+                            <div class=""carousel-item"">
                                 <div class=""testimonials_grid text-center"">
                                     <h3>
                                         Gretchen
@@ -2605,15 +2969,15 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                                     </h3>
                                     <label>United States</label>
                                     <p>
-                                        Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
+                                        Maecenas interdum, metus vitae tincidunt porttito");
+            WriteLiteral(@"r, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
                                         Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.
                                     </p>
                                 </div>
                             </div>
                             <a class=""carousel-control-prev test"" href=""#carouselExampleControls"" role=""button"" data-slide=""prev"">
                                 <span class=""fas fa-long-arrow-alt-left""></span>
- ");
-            WriteLiteral(@"                               <span class=""sr-only"">Previous</span>
+                                <span class=""sr-only"">Previous</span>
                             </a>
                             <a class=""carousel-control-next test"" href=""#carouselExampleControls"" role=""button"" data-slide=""next"">
                                 <span class=""fas fa-long-arrow-alt-right"" aria-hidden=""true""></span>
@@ -2622,7 +2986,8 @@ WriteAttributeValue("", 24675, product.productPrice, 24675, 21, false);
                             </a>
                         </div>
                     </div>
-                </div>
+                </");
+            WriteLiteral(@"div>
             </div>
             <!-- //testimonials -->
             <div class=""row galsses-grids pt-lg-5 pt-3"">

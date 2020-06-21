@@ -53,7 +53,7 @@
                 </ul>
             </div>
             <div class="col-md-6 logo-w3layouts text-center">
-                <img src="images/logo.png" alt="no img">
+                <img src="~/images/logo.png" alt="no img">
             </div>
 
             <div class="col-md-3 top-info-cart text-right mt-lg-4">
@@ -426,7 +426,6 @@
     <!--jQuery-->
     @*<script src="js/jquery-2.2.3.min.js"></script>*@
     <!-- newsletter modal -->
-   
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -589,7 +588,14 @@
         });
     </script>
     <!--// end-smoth-scrolling -->
-
+    @*filter by price*@
+    <script>
+        //when we select any value from drop down list. filter products depending on selected price
+        $("#dropdownlist").on("change", function () {
+            let price = $("#dropdownlist").val();
+            $('#prods').load("/User/Shop/FilterByPrice?priceRange=" + price);
+        });
+    </script>
     <script src="~/js/bootstrap.js"></script>
     <!-- js file -->
 </body>

@@ -1,0 +1,76 @@
+﻿@model List<FinalProject.Models.product>
+@foreach (var product in Model)
+{
+
+<div class="col-md-3 product-men women_two shop-gd">
+    <div class="product-googles-info googles">
+        <div class="men-pro-item">
+            <div class="men-thumb-item">
+                <img src="~/images/@product.productPhoto" class="img-fluid" alt="product image">
+                <div class="men-cart-pro">
+                    <div class="inner-men-cart-pro">
+                        @*replace href attr with actions and controllers for that product*@
+                        <a asp-controller ="Shop" asp-action="ProductDetails" asp-route-productId="@product.productId" class="link-product-add-cart">Quick View</a>
+                    </div>
+                </div>
+                <span class="product-new-top">New</span>
+            </div>
+            <div class="item-info-product">
+                <div class="info-product-price">
+                    <div class="grid_meta">
+                        <div class="product_price">
+                            <h4>
+                                @*Also Remember to change controllers and actions for the product name if clicked*@
+                                <a asp-controller ="Shop" asp-action="ProductDetails" asp-route-productId="@product.productId">@product.productName</a>
+                            </h4>
+                            <div class="grid-price mt-2">
+                                <span class="money ">@product.productPrice</span>
+                            </div>
+                        </div>
+                        <ul class="stars">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="googles single-item hvr-outline-out">
+                        <form action="#" method="post">
+                            @*Here when the add to cart btn is clicked it submits the form containing
+                                product id as hidden field and add it to cart *@
+                            <input type="hidden" name="ProductId" value="@product.productId">
+                            <button type="submit" class="googles-cart pgoogles-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+}
