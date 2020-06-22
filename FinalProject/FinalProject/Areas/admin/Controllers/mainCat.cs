@@ -142,9 +142,9 @@ namespace FinalProject.Areas.admin.Controllers
 
 
         //DeleteAction
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            mainCategory requiredRow = db.MainCategories.Find(id);
+            mainCategory requiredRow = await db.MainCategories.FindAsync(id);
 
             if (requiredRow.mainCategoryPhoto != null)
             { 
@@ -158,7 +158,7 @@ namespace FinalProject.Areas.admin.Controllers
             }
 
             db.MainCategories.Remove(requiredRow);
-            db.SaveChanges();
+            await db.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }

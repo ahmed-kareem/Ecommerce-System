@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FinalProject.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProject.Areas.User.Controllers
@@ -15,7 +16,7 @@ namespace FinalProject.Areas.User.Controllers
         {
             this.context = context;
         }
-
+        
         public IActionResult ShopProducts(int SubCategoryId)
         {
             //check first if no id is passed 

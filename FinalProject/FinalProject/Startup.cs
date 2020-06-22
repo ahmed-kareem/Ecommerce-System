@@ -65,14 +65,14 @@ namespace FinalProject
             app.UseEndpoints(endpoints =>
             {
 
-                //endpoints.MapControllerRoute(
-                //  name: "area",
-                //  pattern: "{area}/{controller}/{action}/{id?}");
-                //endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                  name: "area",
+                  pattern: "{area}/{controller}/{action}/{id?}");
+                endpoints.MapRazorPages();
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=User}/{controller=hemalaya}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
 
             });
