@@ -1,4 +1,5 @@
-﻿using FinalProject.Models;
+﻿using FinalProject.Areas.Identity.Pages.Account;
+using FinalProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace FinalProject.ViewModels
         public List<product> products { get; set; }
         public List<mainCategory> mainCategories{ get; set; }
         public List<subCategory> subCategories { get; set; }
+
 
     }
 }
