@@ -72,7 +72,7 @@ namespace FinalProject
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{area=User}/{controller=Hemalaya}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
 
             });
