@@ -1,0 +1,23 @@
+﻿@model List<orderItem>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Item Id</th>
+            <th scope="col">Order Id</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var orderitem in Model)
+        {
+            <tr>
+                <td>@orderitem.productId</td>
+                <td>@orderitem.orderId</td>
+                <td>@orderitem.quantity</td>
+                <td>@orderitem.subTotal</td>
+                <td>@orderitem.Product.productName</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -135,24 +135,18 @@ namespace FinalProject.Migrations
                     b.Property<string>("orderAddress")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("orderTotalPrice")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("orderStatus")
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
 
-                    b.Property<decimal?>("orderTotalPriceAfterPromoCode")
+                    b.Property<decimal>("orderTotalPrice")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime?>("orederDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("orederStatus")
-                        .HasColumnType("nvarchar(10)")
-                        .HasMaxLength(10);
-
-                    b.Property<int?>("promoCode")
-                        .HasColumnType("int");
-
-                    b.Property<int>("userId")
-                        .HasColumnType("int");
+                    b.Property<string>("userId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("orderId");
 

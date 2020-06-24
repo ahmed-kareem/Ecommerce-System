@@ -5,10 +5,10 @@
     ViewData["ActivePage"] = ManageNavPages.PersonalData;
 }
 
-<h4>@ViewData["Title"]</h4>
+<h4 class="nav-colr">@ViewData["Title"]</h4>
 
 <div class="alert alert-warning" role="alert">
-    <p>
+    <p class="nav-colr">
         <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
     </p>
 </div>
@@ -19,7 +19,7 @@
         @if (Model.RequirePassword)
         {
             <div class="form-group">
-                <label asp-for="Input.Password"></label>
+                <label class="nav-colr" asp-for="Input.Password"></label>
                 <input asp-for="Input.Password" class="form-control" />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>

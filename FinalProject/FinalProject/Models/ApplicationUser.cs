@@ -17,5 +17,6 @@ namespace FinalProject.Models
         public string Name { get; set; }
 
         public ApplicationUser() :base() { }
+
     }
 }

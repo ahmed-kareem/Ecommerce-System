@@ -1,4 +1,9 @@
 ﻿@model List<FinalProject.Models.product>
+@if (Model == null)
+{
+    <h1>No Products</h1>
+}
+else { 
 @foreach (var product in Model)
 {
 
@@ -6,7 +11,7 @@
     <div class="product-googles-info googles">
         <div class="men-pro-item">
             <div class="men-thumb-item">
-                <img src="~/images/@product.productPhoto" class="img-fluid" alt="product image">
+                <img src="~/photos/@product.productPhoto" class="img-fluid" alt="product image">
                 <div class="men-cart-pro">
                     <div class="inner-men-cart-pro">
                         @*replace href attr with actions and controllers for that product*@
@@ -73,4 +78,5 @@
     </div>
 </div>
 
+}
 }
