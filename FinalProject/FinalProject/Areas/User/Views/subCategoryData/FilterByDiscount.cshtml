@@ -25,7 +25,7 @@ else
                             <div class="grid_meta">
                                 <div class="product_price">
                                     <h4>
-                                        <a asp-controller="Shop" asp-action="getProductDetails" asp-route-productId="@product.productId">@product.productName</a>
+                                        <a asp-controller="subCategoryData" asp-action="getProductDetails" asp-route-productId="@product.productId">@product.productName</a>
                                     </h4>
                                     <div class="grid-price mt-2">
                                         @{
@@ -47,9 +47,8 @@ else
                                 </div>
                             </div>
                             <div class="googles single-item hvr-outline-out">
-                                <form action="#" method="post">
-                                    <input type="hidden" name="id" value="@product.productId" />
-                                    <button type="submit" class="googles-cart pgoogles-cart">
+                                <form method="post" action="Index">
+                                    <button type="submit" asp-route-ProductId="@product.productId" name="addCart" id="addCart" class="googles-cart pgoogles-cart">
                                         <i class="fas fa-cart-plus"></i>
                                     </button>
                                 </form>

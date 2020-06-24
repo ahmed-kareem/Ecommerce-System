@@ -48,6 +48,7 @@ namespace FinalProject.Areas.User.Controllers
         //filter products by Discount
         public IActionResult FilterByDiscount(int Discount)
         {
+            
             //get products with price less than or equal to filtering price
             var FilteredProducts = context.Products.Where(p => p.discountValue <= Discount).ToList();
             return PartialView(FilteredProducts);
