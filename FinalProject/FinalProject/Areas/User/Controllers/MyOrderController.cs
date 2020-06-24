@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 namespace FinalProject.Areas.User.Controllers
 {
     [Authorize]
+    [Area("User")]
     public class MyOrderController : Controller
     {
         private ApplicationDbContext context;

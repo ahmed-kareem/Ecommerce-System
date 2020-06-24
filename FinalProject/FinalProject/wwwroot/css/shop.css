@@ -588,6 +588,11 @@ span.money {
     color: #fff;
 }
 
+.link-product-add-cart:active {
+	background: #cb982f !important;
+	color: #fff!important;
+}
+
 ul.stars a i {
 	color: #cecbcb;
 	font-size: 0.5em;

@@ -24,14 +24,16 @@ namespace FinalProject.Controllers
             //var subcat = db.SubCategories.Where(x => categories.Any(xx=>xx.mainCategoryId==x.mainCategoryId)).Take(10);
             return View(categories);
         }
-        //public JsonResult search(string Prefix)
-        //{
-        //    var productlist = db.Products.Select(x => x.productName).ToList();
-        //    var result = (from N in productlist
-        //                  where N.productName.Contains(Prefix)
-        //                  select new { N.productName });
-        //    return Json(result.ToArray());
-        //}
+
+        [HttpPost]
+        public JsonResult search(string Prefix)
+        {
+
+            var productlist = db.Products.Where(x => x.productName.ToLower().Contains(Prefix.ToLower()))
+                .Select(x => new { productName = x.productName, ID = x.productId }).ToList();
+
+            return Json(productlist);
+        }
 
     }
 }

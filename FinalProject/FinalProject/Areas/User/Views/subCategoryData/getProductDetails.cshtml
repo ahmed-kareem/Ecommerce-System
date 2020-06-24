@@ -2,7 +2,7 @@
 
 
 @{
-    ViewData["Title"] = "getProductDetails";
+    ViewData["Title"] = "Product Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -57,15 +57,11 @@
 
                     <div class="occasion-cart">
                         <div class="googles single-item singlepage">
-                            <form action="#" method="post">
-                                <input type="hidden" name="cmd" value="_cart">
-                                <input type="hidden" name="add" value="1">
-                                <input type="hidden" name="googles_item" value="Farenheit">
-                                <input type="hidden" name="amount" value="575.00">
-                                <button type="submit" class="googles-cart pgoogles-cart">
-                                    Add to Cart
-                                </button>
+                            <form method="post" action="Index">
 
+                                <button type="submit" asp-route-id="@Model.productId" name="addCart" id="addCart" class="googles-cart pgoogles-cart">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
                             </form>
 
                         </div>

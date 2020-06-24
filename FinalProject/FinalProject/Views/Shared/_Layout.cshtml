@@ -4,19 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - FinalProject</title>
-    @*<link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
-        <link rel="stylesheet" href="~/css/site.css" />
-        <link href="~/css/style6.css" rel='stylesheet' type='text/css' />
-        <link rel="stylesheet" type="text/css" href="~/css/jquery-ui1.css">
-        <link href="~/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
-        <link rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="~/css/shop.css" type="text/css" />
-        <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css" media="all">
-        <link rel="stylesheet" href="~/css/owl.theme.css" type="text/css" media="all">
-        <link href="~/css/style.css" rel='stylesheet' type='text/css' />
-        <link href="~/css/fontawesome-all.css" rel="stylesheet">
-        <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-        <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">*@
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -34,6 +21,7 @@
     <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css" media="all">
     <link rel="stylesheet" href="~/css/owl.theme.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="~/css/jquery-ui1.css">
+    <link rel="stylesheet" type="text/css" href="~/css/checkout.css">
     <link href="~/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
     <link href="~/css/style.css" rel='stylesheet' type='text/css' />
@@ -45,13 +33,13 @@
         #ui-id-1 {
             width: 575px;
             background-color: black;
-            color:white;
-            list-style-type:none;
+            color: white;
+            list-style-type: none;
         }
+
         .ui-widget-content a {
             color: white;
         }
-       
     </style>
 </head>
 <body>
@@ -81,12 +69,10 @@
                         </li>
                         <li class="galssescart galssescart2 cart cart box_1">
                             <form action="#" method="post" class="last">
-                                <input type="hidden" name="cmd" value="_cart">
-                                <input type="hidden" name="display" value="1">
-                                <button class="top_googles_cart" type="submit" name="submit" value="">
+                                <a class="top_googles_cart" style="color:#DBA901" value="" href="~/Hemalaya/shoppingcart">
                                     My Cart
                                     <i class="fas fa-cart-arrow-down"></i>
-                                </button>
+                                </a>
                             </form>
                         </li>
                     </ul>
@@ -140,7 +126,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" asp-action="About" asp-controller="Hemalaya">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -160,7 +146,7 @@
                             <hr />
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" asp-action="contact" asp-controller="Hemalaya">Contact</a>
                         </li>
                     </ul>
 
@@ -168,10 +154,8 @@
             </nav>
         </header>
     </div>
-    <div class="container-fluid">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div>
+        @RenderBody()
     </div>
 
     <!--footer -->
@@ -491,6 +475,12 @@
             let price = $("#dropdownlist").val();
             $('#prods').load("/User/Shop/FilterByPrice?priceRange=" + price);
         });
+    </script>
+    <script>
+        $("#discount-dropdownlist").on("change", function () {
+            let discount = $("#discount-dropdownlist").val();
+            $('#prods').load("/User" + discount);
+        })
     </script>
 
     <script src="~/js/bootstrap.js"></script>

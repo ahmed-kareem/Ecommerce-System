@@ -12,13 +12,13 @@ namespace FinalProject.Areas.User.Controllers
 
     public class subCategoryDataController : Controller
     {
-        private ApplicationDbContext db;
+        private ApplicationDbContext context;
 
 
         //Constructor
-        public subCategoryDataController(ApplicationDbContext db)
+        public subCategoryDataController(ApplicationDbContext context)
         {
-            this.db = db;
+            this.context = context;
         }
         public IActionResult Index()
         {
@@ -26,15 +26,45 @@ namespace FinalProject.Areas.User.Controllers
         }
         public IActionResult getsubcategoryData(int id)
         {
-          var subcat=  db.SubCategories.Find(id);
+            //if (id == 0)
+            //{
+            //    var subcategories = context.SubCategories.ToList();
+            //    return View(subcategories);
+            //}
 
+            var subcat=  context.SubCategories.Find(id);
             return View(subcat);
         }
 
-        public IActionResult getProductDetails(int id)
+
+        //filter products by price
+        public IActionResult FilterByPrice(int priceRange)
         {
-           var product = db.Products.Find(id);
-            ViewBag.color = ColorTranslator.FromHtml(product.productColor);
+            //get products with price less than or equal to filtering price
+            var FilteredProducts = context.Products.Where(p => p.productPrice <= priceRange).ToList();
+            return PartialView(FilteredProducts);
+        }
+
+        //filter products by Discount
+        public IActionResult FilterByDiscount(int Discount)
+        {
+            //get products with price less than or equal to filtering price
+            var FilteredProducts = context.Products.Where(p => p.discountValue <= Discount).ToList();
+            return PartialView(FilteredProducts);
+        }
+
+        //filter products by Rate
+        public IActionResult FilterByRate(int avgRate)
+        {
+            //get products with price less than or equal to filtering price
+            var FilteredProducts = context.Products.Where(p => p.productAverageRate == avgRate).ToList();
+            return PartialView(FilteredProducts);
+        }
+
+        public IActionResult getProductDetails(int ProductId)
+        {
+           var product = context.Products.Find(ProductId);
+           //ViewBag.color = ColorTranslator.FromHtml(product.productColor);
 
             return View(product);
         }

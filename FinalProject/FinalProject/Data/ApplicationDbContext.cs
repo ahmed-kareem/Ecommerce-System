@@ -21,6 +21,7 @@ namespace FinalProject.Data
         public DbSet<order> orders { get; set; }
         public DbSet<orderItem> orderItems { get; set; }
         public DbSet<rate> rates { get; set; }
-        public DbSet<offers> Offers { get; set; }
+        public DbSet<penddingOrder> penddingOrders { get; set; }
+
     }
 }
