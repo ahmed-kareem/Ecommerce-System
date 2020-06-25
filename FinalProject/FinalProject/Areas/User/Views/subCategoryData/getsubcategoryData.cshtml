@@ -1,5 +1,5 @@
 ﻿
-@model FinalProject.Models.subCategory
+@model List<FinalProject.Models.product>
 @{
     ViewData["Title"] = "Proudcts";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,7 +9,7 @@
 
    .banner_inner {
 
-        background: url('/photos/@Model.subCategoryPhoto') no-repeat 0px -73px;
+        background: url('/photos/1.jpg') no-repeat 0px -73px;
         background-size:contain;
         background-size: auto;
         background-size: cover;
@@ -20,7 +20,11 @@
         min-height: 180px;
     }
     </style>
-
+@if (Model == null)
+{
+    <h2>No Products</h2>
+}
+else { 
 <div class="banner_inner">
     <div class="services-breadcrumb">
         <div class="inner_breadcrumb">
@@ -50,7 +54,7 @@
                     <!-- price range -->
                     <div class="range">
                         <h3 class="agileits-sear-head">Price range</h3>
-                        <select id="dropdownlist" class="w-75">
+                        <select id="dropdownlist" class="w-75 h-25">
                             <option value="300">300$</option>
                             <option value="500">500$</option>
                             <option value="1000">1000$</option>
@@ -63,12 +67,12 @@
                     <!-- discounts -->
                     <div class="range">
                         <h3 class="agileits-sear-head">Discount</h3>
-                        <select id="discount-dropdownlist" class="w-75">
-                            <option value="10">10%</option>
-                            <option value="20">20%</option>
-                            <option value="30">30%</option>
-                            <option value="40">40%</option>
-                            <option value="50">50%</option>
+                        <select id="discount-dropdownlist" class="w-75 h-25">
+                            <option value="100">100$ Discount</option>
+                            <option value="200">200$ Discount</option>
+                            <option value="300">300$ Discount</option>
+                            <option value="400">400$ Discount</option>
+                            <option value="500">500$ Discount</option>
                         </select>
                     </div>
                     <!-- //discounts -->
@@ -97,23 +101,19 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" onclick="FilterByRate(3.5)">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <span>3.5</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="#" onclick="FilterByRate(3)">
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    
                                     <span>3.0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="FilterByRate(2)">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>2.0</span>
                                 </a>
                             </li>
                             
@@ -140,7 +140,7 @@
                         </div>
                         <div class="row" id="prods">
                             <!-- /Products -->
-                            @foreach (var item in Model.Products)
+                            @foreach (var item in Model)
                             {
                             <div class="col-md-3 product-men women_two shop-gd">
                                 <div class="product-googles-info googles" style="height:100% !important">
@@ -202,94 +202,9 @@
                 </div>
                 <!--//product right-->
             </div>
-            <!--/slide-->
-            <div class="slider-img mid-sec mt-lg-5 mt-2">
-                <!--//banner-sec-->
-                <h3 class="tittle-w3layouts text-left my-lg-4 my-3">Abo shady Products</h3>
-                <div class="mid-slider">
-                    <div class="owl-carousel owl-theme row">
-                        @*foreach on products from DB*@
-                        <div class="item">
-                            <div class="gd-box-info text-center">
-                                <div class="product-men women_two bot-gd">
-                                    <div class="product-googles-info slide-img googles">
-                                        <div class="men-pro-item">
-                                            <div class="men-thumb-item">
-                                                <img src="images/1.png" class="img-fluid" alt="">
-                                                <div class="men-cart-pro">
-                                                    <div class="inner-men-cart-pro">
-                                                        <a href="single.html" class="link-product-add-cart">Quick View</a>
-                                                    </div>
-                                                </div>
-                                                <span class="product-new-top">New</span>
-                                            </div>
-                                            <div class="item-info-product">
-
-                                                <div class="info-product-price">
-                                                    <div class="grid_meta">
-                                                        <div class="product_price">
-                                                            <h4>
-                                                                <a href="single.html">Fastrack Aviator </a>
-                                                            </h4>
-                                                            <div class="grid-price mt-2">
-                                                                <span class="money ">$325.00</span>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="stars">
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="googles single-item hvr-outline-out">
-                                                        <form action="#" method="post">
-                                                            <input type="hidden" name="cmd" value="_cart">
-                                                            <input type="hidden" name="add" value="1">
-                                                            <input type="hidden" name="googles_item" value="Fastrack Aviator">
-                                                            <input type="hidden" name="amount" value="325.00">
-                                                            <button type="submit" class="googles-cart pgoogles-cart">
-                                                                <i class="fas fa-cart-plus"></i>
-                                                            </button>
-
-                                                        </form>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <!--//slider-->
+            
         </div>
     </div>
 </section>
 
+  }

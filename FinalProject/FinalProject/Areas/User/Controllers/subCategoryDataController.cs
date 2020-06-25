@@ -26,14 +26,15 @@ namespace FinalProject.Areas.User.Controllers
         }
         public IActionResult getsubcategoryData(int id)
         {
-            //if (id == 0)
-            //{
-            //    var subcategories = context.SubCategories.ToList();
-            //    return View(subcategories);
-            //}
+             
+            if (id == 0)
+            {
+                var products = context.Products.ToList();
+                return View(products);
+            }
 
-            var subcat=  context.SubCategories.Find(id);
-            return View(subcat);
+            var products1 = context.Products.Where(p => p.subCategoryId == id).ToList();
+            return View(products1);
         }
 
 
