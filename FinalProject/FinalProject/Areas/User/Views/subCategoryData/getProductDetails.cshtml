@@ -41,8 +41,7 @@
                 <div class="col-lg-8 single-right-left simpleCart_shelfItem">
                     <h3>@Model.brandName (@ViewBag.color)</h3>
                     <p>
-                        <span class="item_price">$650</span>
-                        <del>$1,199</del>
+                        <span class="item_price">$@Model.productPrice</span>
                     </p>
                     <div class="rating1">
                         <ul class="stars">
@@ -57,7 +56,7 @@
                     <div class="occasion-cart">
                         <div class="googles single-item singlepage">
                             <form method="post" action="Index">
-                                <button type="submit" asp-route-ProductId="@Model.productId" name="addCart" id="addCart" class="googles-cart pgoogles-cart">
+                                <button type="submit" asp-area="User" asp-action="Index" asp-controller="Hemalaya"  asp-route-ProductId="@Model.productId" name="addCart" id="addCart" class="googles-cart pgoogles-cart">
                                     <i class="fas fa-cart-plus">Add To Cart</i>
                                 </button>
                             </form>
@@ -100,8 +99,6 @@
                     <div id="horizontalTab">
                         <ul class="resp-tabs-list">
                             <li>Description</li>
-                            <li>Reviews</li>
-                            <li>Information</li>
                         </ul>
                         <div class="resp-tabs-container">
                             <!--/tab_one-->

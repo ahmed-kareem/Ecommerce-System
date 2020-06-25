@@ -323,7 +323,7 @@
                 select: function (event, ui) {
 
                     event.preventDefault();
-                    window.open("@Url.Action("getProductDetails", "subCategoryData")" + "?id=" + ui.item.value);
+                    window.open("@Url.Action("getProductDetails", "subCategoryData")" + "?ProductId=" + ui.item.value);
                 }
             });
 
