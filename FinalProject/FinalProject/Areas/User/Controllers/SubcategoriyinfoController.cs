@@ -35,5 +35,15 @@ namespace FinalProject.Controllers
             return Json(productlist);
         }
 
+        public JsonResult subsearch(string Prefix)
+        {
+
+            var sublist = db.SubCategories.Where(x => x.subCategoryName.ToLower().Contains(Prefix.ToLower()))
+                .Select(x => new { label = x.subCategoryName, val = x.subCategoryId }).ToList();
+
+            return Json(sublist);
+        }
+
+
     }
 }

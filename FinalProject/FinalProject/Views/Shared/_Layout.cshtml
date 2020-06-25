@@ -298,38 +298,36 @@
     <!-- //cart-js -->
     <script>
         $(document).ready(function () {
-            $("#CategoriesShop").load("@Url.Action("index", "Subcategoriyinfo")")
-            var availableTags = [
-                "ActionScript",
-                "AppleScript",
-                "Asp",
-                "BASIC",
-                "C",
-                "C++",
-                "Clojure",
-                "COBOL",
-                "ColdFusion",
-                "Erlang",
-                "Fortran",
-                "Groovy",
-                "Haskell",
-                "Java",
-                "JavaScript",
-                "Lisp",
-                "Perl",
-                "PHP",
-                "Python",
-                "Ruby",
-                "Scala",
-                "Scheme"
-            ];
+                       $("#CategoriesShop").load("@Url.Action("index", "Subcategoriyinfo")")
+
             $("#search").autocomplete({
-                source: availableTags  @*'@Url.Action("search", "Subcategoriyinfo")'*@
-                ,
+                source:  function(request, response) {
+                    $.ajax({
+                        url:'@Url.Action("search", "Subcategoriyinfo")',
+                        type: "POST",
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+
+                                return { label: item.productName, value: item.id };
+                            }))
+
+                        }
+                    })
+                },
+
                 messages: {
                     noResults: "", results: ""
+                },
+                select: function (event, ui) {
+
+                    event.preventDefault();
+                    window.open("@Url.Action("getProductDetails", "subCategoryData")" + "?id=" + ui.item.value);
                 }
             });
+
+
 
             $(".button-log a").click(function () {
                 $(".overlay-login").fadeToggle(200);

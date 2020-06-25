@@ -39,7 +39,6 @@
                 <td> @item.subCategoryName </td>
                 <td> <img src="~/photos/@item.subCategoryPhoto" width="75" height="100" alt="sub category photo" /> </td>
                 <td> @item.MainCategory.mainCategoryName </td>
-                <td> <a asp-area="admin" asp-controller="subCat" asp-action="selectedCategoryProducts" asp-route-id="@item.subCategoryId" class="btn btn-outline-dark"> produts </a> </td>
                 <td> <a asp-area="admin" asp-controller="subCat" asp-action="Edit" asp-route-id="@item.subCategoryId" class="btn btn-info"> Edit </a> </td>
                 <td> <a asp-area="admin" asp-controller="subCat" asp-action="Delete" asp-route-id="@item.subCategoryId" class="btn btn-danger"> Delete </a> </td>
             </tr>

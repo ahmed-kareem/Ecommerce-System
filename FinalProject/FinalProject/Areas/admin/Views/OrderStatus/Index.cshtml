@@ -1,0 +1,35 @@
+﻿@model List<orderstatus>
+
+@{ ViewBag.title = "Order Status";
+    ViewBag.heading = "Order Status"; }
+
+@section breadcrumb
+{
+    <li class="breadcrumb-item active"> <a asp-area="admin" asp-controller="Home" asp-action="Index"> home </a> </li>
+    <li class="breadcrumb-item active">Order Status</li>
+}
+
+@* -------------------------------------- Start RenderBody ------------------------------------------------------ *@
+
+<div>
+    <a class="btn btn-dark" asp-area="admin" asp-controller="OrderStatus" asp-action="Create"> Add New Status </a>
+</div>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th> Status Name </th>
+            <th> Action </th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.status </td>
+            <td>
+                <a class="btn btn-danger" asp-area="admin" asp-controller="OrderStatus" asp-action="Delete" asp-route-id="@item.orderstatusId"> Delete </a>
+            </td>
+        </tr>
+    }
+</table>

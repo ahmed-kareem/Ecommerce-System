@@ -3,14 +3,12 @@
 @model List<order>
 
 
-@{
-    ViewBag.title = "Admin Home";
-    ViewBag.heading = "Home";
-}
+@{ ViewBag.title = "Admin Home";
+                ViewBag.heading = "Home"; }
 
 @section breadcrumb
 {
-    <li class="breadcrumb-item active" >Home</li>
+    <li class="breadcrumb-item active">Home</li>
 }
 
 
@@ -24,7 +22,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class="col-xl-3 col-md-6">
         <div class="card bg-success text-white mb-4">
             <div class="card-body">Pending Orders</div>
@@ -52,12 +50,11 @@
 
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td> @item.orederDate </td>
-                        <td> @item.orderTotalPrice</td>
-                        <td> @item.orderStatus </td>
-                    </tr>
-                }
+    <tr>
+        <td> @item.orederDate </td>
+        <td> @item.orderTotalPrice</td>
+        <td> @item.orderStatus </td>
+    </tr>}
 
 
             </table>

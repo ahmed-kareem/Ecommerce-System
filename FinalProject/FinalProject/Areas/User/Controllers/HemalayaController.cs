@@ -141,7 +141,9 @@ namespace FinalProject.Areas.User.Controllers
             //make order items for order
             foreach (var item in ids)
             {
-                orderItem orderitem = new orderItem { orderId = o_id, productId = item, quantity = 1, subTotal = 1 * 2 };
+                product pr = context.Products.SingleOrDefault(x => x.productId == item);
+
+                orderItem orderitem = new orderItem { orderId = o_id, productId = item, quantity = 1, subTotal = pr.productPrice };
                 context.orderItems.Add(orderitem);
                 context.SaveChanges();
             }

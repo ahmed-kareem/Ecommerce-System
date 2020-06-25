@@ -491,3 +491,7 @@ D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Raz
 D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\subCategoryData\FilterByRate.cshtml.g.cs
 D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Hemalaya\About.cshtml.g.cs
 D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\User\Views\Hemalaya\Contact.cshtml.g.cs
+D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\admin\Views\Home\Login.cshtml.g.cs
+D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\admin\Views\Home\pending.cshtml.g.cs
+D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\admin\Views\OrderStatus\Create.cshtml.g.cs
+D:\github\Ecommerce-System\FinalProject\FinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\admin\Views\OrderStatus\Index.cshtml.g.cs
